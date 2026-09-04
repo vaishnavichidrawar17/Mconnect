@@ -8,7 +8,7 @@ export class Dashboard {
     }
 
     async closeNotification(){
-        await this.page.locator('[data-testid="notification-close"]').nth(2).click();
+        // await this.page.locator('[data-testid="notification-close"]').nth(2).click();
         await this.page.locator('[data-testid="notification-close"]').nth(1).click();
         await this.page.locator('[data-testid="notification-close"]').nth(0).click();
     }

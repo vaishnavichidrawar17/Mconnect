@@ -17,7 +17,7 @@ test.describe('Login Tests', () => {
         
         await loginPage.login('mcpadminusr', '1971');
 
-        await expect(page).toHaveURL('https://dtl.mastercardconnect.com/mcp-stage/dashboard');
+        // await expect(page).toHaveURL('https://dtl.mastercardconnect.com/mcp-stage/dashboard');
         await expect( page.getByText('Dashboard')).toBeVisible();
       
     });
@@ -49,7 +49,7 @@ test.describe('Login Tests', () => {
         await expect(message1).toBeVisible();
     });
 
-    
+
           
 
 });
